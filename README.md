@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-DEMO: https://thaianhnv99.github.io/react-tw-ui/
+DEMO: https://thaianhnv99.github.io/c-react-tw-ui/
 
 ## Available Scripts
 
