@@ -29,7 +29,7 @@ const Nav = () => {
     <nav className="col-span-1 bg-cyan-200 relative">
       <div className="flex md:block mx-4 ml-2 justify-between items-center">
         <h4 className="uppercase font-bold text-primary py-4 border-b border-primary text-right">
-          Phimmoi.net
+          Phimmoi.neT
         </h4>
         <div
           className="md:hidden"
