@@ -7,6 +7,9 @@ jobs:
   build-and-deploy: 
     name: Build and Deploy
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
     env:
       BUCKET: react-buckets
       DIST: build
@@ -26,10 +29,10 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.REGION }}
 
-    #- name: Use Node.js
+    #- name: Use Node.js ${{ matrix.node-version }}
     #  uses: actions/setup-node@v2
     # with:
-    #   node-version: '14'
+    #   node-version: ${{ matrix.node-version }}
 
     - name: Install Dependencies
       run: |
