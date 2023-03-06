@@ -34,7 +34,7 @@ jobs:
     - name: Install Dependencies
       run: |
         node --version
-        yarn ci --production
+        yarn add ci --production
 
     - name: Build Static Website
       run: yarn run build
