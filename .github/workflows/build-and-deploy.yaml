@@ -2,7 +2,7 @@
 name: Build and Deploy React App to CloudFront
 on:
   push: 
-      branches: [main]
+      branches: main
 jobs: 
   build-and-deploy: 
     name: Build and Deploy
@@ -16,7 +16,7 @@ jobs:
     steps:
     # Clone the github repository
     - name: Checkout
-      uses: actions.checkout
+      uses: actions/checkout@v2
 
     # install aws cli and configure credentials
     - name: Configure AWS Credentials
