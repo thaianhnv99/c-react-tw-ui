@@ -15,7 +15,7 @@ jobs:
 
     steps:
     # Clone the github repository
-    - name: CHeckout
+    - name: Checkout
       uses: actions.checkout@v2
 
     # install aws cli and configure credentials
