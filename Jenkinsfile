@@ -51,7 +51,7 @@ pipeline {
                 script {
                     sshagent(credentials: ['54.159.155.25']) {
                         sh '''
-                            ssh -tt -o StrictHostKeyChecking=no ec2-user@54.159.155.25 "
+                            ssh -tt -o StrictHostKeyChecking=no ec2-user@54.224.59.123 "
                             cd c-reactjs_comp
                             git pull origin main
                             docker-compose down
