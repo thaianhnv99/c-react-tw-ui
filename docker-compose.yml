@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   comp:
-    container_name: c-reactjs-tw-ui
+    container_name: c-reactjs-tw
     build:
       context: ./
     environment:
       - REACT_APP_API_END_POINT=http://localhost:3001
     ports:
       - '80:80'
-    image: c-reactjs-comp
+    image: c-reactjs-tw
